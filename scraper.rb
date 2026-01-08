@@ -10,6 +10,7 @@ require "mechanize"
 
 class Scraper
   def self.run
+    puts "Running ruby #{RUBY_VERSION} on #{`uname -a`}"
     agent = Mechanize.new
 
     # Read in a page
