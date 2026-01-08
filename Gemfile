@@ -4,7 +4,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.4.8"
+ruby "3.3.9"
 
 gem "mechanize", "~> 2.8", ">= 2.8.5"
 gem "nokogiri", "~> 1.18", ">= 1.18.10"
