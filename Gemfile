@@ -7,9 +7,9 @@ source "https://rubygems.org"
 ruby "3.2.2"
 
 gem "mechanize", "~> 2.8.5"
-gem "nokogiri", "~> 1.17.2"
+gem "nokogiri", "~> 1.17.2" # 1.18 does NOT run on heroku-18!
 gem "scraperwiki", git: "https://github.com/openaustralia/scraperwiki-ruby.git", branch: "morph_defaults"
-gem "sqlite3", "~> 1.7.3"
+gem "sqlite3", "~> 2.0.4"
 
 # Development and Test
 gem "rubocop"

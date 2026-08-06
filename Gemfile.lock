@@ -71,7 +71,7 @@ GEM
     ruby-progressbar (1.13.0)
     rubyntlm (0.6.5)
       base64
-    sqlite3 (1.7.3-x86_64-linux)
+    sqlite3 (2.0.4-x86_64-linux-gnu)
     sqlite_magic (0.0.6)
       sqlite3
     unicode-display_width (3.2.0)
@@ -88,7 +88,7 @@ DEPENDENCIES
   nokogiri (~> 1.17.2)
   rubocop
   scraperwiki!
-  sqlite3 (~> 1.7.3)
+  sqlite3 (~> 2.0.4)
 
 RUBY VERSION
    ruby 3.2.2p53
