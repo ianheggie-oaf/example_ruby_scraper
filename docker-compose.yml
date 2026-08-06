@@ -3,14 +3,10 @@
 # scraper: what morph.io generates when a scraper sets memory_mb in its
 # configuration - without that, morph can just build and run the Dockerfile
 # directly (docker build / docker run), no compose file involved at all.
-#
-# dev: for local development and devcontainers. Not part of what morph.io
-# generates or runs in production.
 services:
   scraper:
     build:
       context: .
-      target: scrape
     volumes:
       - .:/app
     # Hard memory cap, corresponding to memory_mb: 200 in the scraper's
@@ -19,12 +15,3 @@ services:
     # present on older Docker installs (morph's included).
     mem_limit: 200M
 
-  dev:
-    build:
-      context: .
-      target: dev
-    volumes:
-      - .:/app
-    # Keeps the container running so you can `docker compose exec dev bash`,
-    # or so a devcontainer tool can attach to it.
-    command: sleep infinity

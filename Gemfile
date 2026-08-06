@@ -11,9 +11,12 @@ gem "nokogiri"
 gem "scraperwiki", git: "https://github.com/openaustralia/scraperwiki-ruby.git", branch: "morph_defaults"
 gem "sqlite3"
 
-# Development and Test
-gem "rubocop"
-# gem "rake", "~> 12.3"
-# gem "rspec", "~> 3.0"
-# gem "simplecov", "~> 0.18.0"
-# gem "simplecov-console"
+group :development do
+  # Development and Test
+  gem "rubocop"
+  # gem "rake", "~> 12.3"
+  # gem "rspec", "~> 3.0"
+  # gem "simplecov", "~> 0.18.0"
+  # gem "simplecov-console"
+end
+
