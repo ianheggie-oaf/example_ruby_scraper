@@ -1,0 +1,11 @@
+// For format details, see https://containers.dev/implementors/json_reference/.
+{
+  "name": "example_ruby_scraper",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/app",
+
+  // Covers the case where Gemfile/Gemfile.lock on the mounted volume have
+  // moved on since the dev image was last built.
+  "postCreateCommand": "bundle install"
+}

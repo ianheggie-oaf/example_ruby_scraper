@@ -4,12 +4,12 @@
 
 source "https://rubygems.org"
 
-ruby "3.2.2" # ruby 3.2.3 does NOT run on heroku-18!
+ruby "3.4.10" # latest 3.4.x patch. Rails 7.2-8.1 need Ruby >= 3.1/3.2 and recommend 3.4
 
-gem "mechanize", "~> 2.14.0"
-gem "nokogiri", "~> 1.17.2" # nokogiri 1.18 does NOT run on heroku-18!
+gem "mechanize"
+gem "nokogiri"
 gem "scraperwiki", git: "https://github.com/openaustralia/scraperwiki-ruby.git", branch: "morph_defaults"
-gem "sqlite3", "~> 2.2.0" # sqlite3 2.3.0 does NOT run on heroku-18!
+gem "sqlite3"
 
 # Development and Test
 gem "rubocop"

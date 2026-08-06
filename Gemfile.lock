@@ -46,9 +46,9 @@ GEM
     net-http-persistent (4.0.8)
       connection_pool (>= 2.2.4, < 4)
     nkf (0.3.0)
-    nokogiri (1.17.2-x86_64-linux)
+    nokogiri (1.19.4-x86_64-linux-gnu)
       racc (~> 1.4)
-    parallel (1.28.0)
+    parallel (2.1.0)
     parser (3.3.12.0)
       ast (~> 2.4.1)
       racc
@@ -74,7 +74,7 @@ GEM
     ruby-progressbar (1.13.0)
     rubyntlm (0.6.5)
       base64
-    sqlite3 (2.2.0-x86_64-linux-gnu)
+    sqlite3 (2.9.5-x86_64-linux-gnu)
     sqlite_magic (0.0.6)
       sqlite3
     unicode-display_width (3.2.0)
@@ -87,14 +87,14 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  mechanize (~> 2.14.0)
-  nokogiri (~> 1.17.2)
+  mechanize
+  nokogiri
   rubocop
   scraperwiki!
-  sqlite3 (~> 2.2.0)
+  sqlite3
 
 RUBY VERSION
-   ruby 3.2.2p53
+   ruby 3.4.10p104
 
 BUNDLED WITH
    2.4.10
