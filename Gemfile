@@ -4,7 +4,7 @@
 
 source "https://rubygems.org"
 
-ruby "3.2.2"
+ruby "3.2.3"
 
 gem "mechanize", "~> 2.14.0"
 gem "nokogiri", "~> 1.18.10" # Breaks!
