@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 # This is a template for a Ruby scraper on morph.io (https://morph.io)
-
+require "bundler/setup"
 Bundler.require
 
 require "scraperwiki"
