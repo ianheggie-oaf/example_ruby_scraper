@@ -87,7 +87,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  mechanize (~> 2.14.0)
+  mechanize (~> 2.14)
   nokogiri (~> 1.17.2)
   rubocop
   scraperwiki!
