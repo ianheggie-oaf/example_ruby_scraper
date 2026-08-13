@@ -1,4 +1,7 @@
 AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  TargetRubyVersion: 3.2
   Exclude:
     - bin/*
 
@@ -46,6 +49,10 @@ Metrics/BlockLength:
 Metrics/ParameterLists:
   Enabled: true
   Max: 5
+
+# Not required on small project
+Style/Documentation:
+  Enabled: false
 
 # Match RubyMine's formatting
 Layout/IndentationWidth:
